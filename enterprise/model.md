@@ -4,7 +4,23 @@ Kavia AI provides flexibility in how LLMs are used across the platform. Organiza
 
 ## Default Models Provided by Kavia
 
-Kavia ships with a curated set of default LLMs optimized for different stages of the SDLC. These models are pre-configured and require no setup — they work out of the box for all Kavia features including code generation, test generation, planning, and analysis.
+Kavia ships with a curated set of enterprise-grade LLMs optimized for different stages of the SDLC. These models are deployed using **Azure** and **AWS Bedrock** infrastructure, ensuring high availability and security. All models are pre-configured and require no setup — they work out of the box for all Kavia features including code generation, test generation, planning, and analysis.
+
+### Supported Models
+
+**OpenAI GPT Models:**
+- GPT 5.1
+- GPT 5.2
+- GPT 5.5
+- GPT 5.3 Codex
+
+**Google Models:**
+- Gemini-3-Pro
+
+**Anthropic Claude Models:**
+- Claude-Sonnet 4.5
+- Claude Sonnet 4.6
+- Claude Opus 4.6
 
 ```mermaid
 graph TD
@@ -36,10 +52,9 @@ Kavia's multi-agent orchestrator selects the appropriate model for each task bas
 
 ## Bring Your Own Models (BYOM)
 
-Kavia allows developers and organizations to select LLMs from several providers, including open-source models or custom models set up by the customer. Supported options include:
+Kavia allows developers and organizations to select LLMs from enterprise providers, including custom models set up by the customer. Supported options include:
 
-- **Commercial LLM providers** — Connect models from providers such as OpenAI, Anthropic, Google, and others.
-- **Open-source LLMs** — Use self-hosted open-source models (e.g., Llama, Mistral, Code Llama).
+- **Commercial LLM providers** — Connect models from providers such as OpenAI, Anthropic, and Google, deployed via Azure and AWS Bedrock.
 - **Custom fine-tuned models** — Bring models that have been fine-tuned on your organization's data or domain.
 
 These models can optionally run in the customer's own hosted environment, ensuring that no data leaves the organization's infrastructure.
